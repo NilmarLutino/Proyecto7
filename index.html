@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MY PICTURE</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+     <!-- Video Source -->
+    <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+    <section class="showcase">
+        <header>
+            <h2 class="logo">MY PICTURE</h2>
+            <div class="toggle"></div>
+        </header>
+        <!--Vídeo de fauxels: https://www.pexels.com/es-es/video/una-mujer-mirando-fotografias-3252287/-->
+        <video src="static/video_index.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>No pares! </h2> 
+            <h3>Revive tus experiencias</h3>
+            <p>MY PICTURE es una tienda de fotografía que tiene como misión ayudar a sus clientes a revivir sus experiencias a través de fotografías de alta calidad y productos personalizados. Creemos que las fotografías son una forma única de mantener vivos los momentos más importantes de la vida, y estamos comprometidos en ofrecer un servicio excepcional y productos de alta calidad para que nuestros clientes puedan revivir y disfrutar de esos momentos especiales una y otra vez.</p>
+            <a href="galeria.php">¡EXPLORA!</a>
+        </div>
+        <ul class="social">
+            <!--<li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>-->
+            <div class="icon beb1">
+                <div class="tooltip">FACEBOOK</div>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+            </div>
+            <div class="icon beb2">
+                <div class="tooltip">INSTAGRAM</div>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+            </div>
+            <div class="icon beb3">
+                <div class="tooltip">TWITTER</div>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+            </div>
+        </ul>
+    </section>
+
+
+
+    <div class="menu">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="eventos.php">Eventos</a></li>
+        <li><a href="galeria.php">Galeria</a></li>
+        <li><a href="pedidos.php">Pedidos</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+        <li><a href="pagAdmin.php">Administrar</a></li>
+        </ul>
+    </div>
+
+    <script>
+         const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
